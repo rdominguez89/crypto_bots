@@ -19,7 +19,7 @@ def send_telegram_message(msg, token=TOKEN):
         return
     return
 
-
+coin = "" #Name of token/coin
 def price_request_coin():
     try:
         data = requests.get('https://api.pancakeswap.info/api/v2/tokens/....').json() #add token/coin adress in pancakeswap
@@ -31,7 +31,6 @@ def price_request_coin():
         return price
     return float(df['data']['price'])
 
-coin = "" #Name of token/coin
 price_now = price_request_coin()
 price_min_max = [0.92*price_now,1.08*price_now] #percentages to change. In this case ~8%
 
