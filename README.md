@@ -2,7 +2,7 @@ THIS IS NOT FINANCIAL ADVICE. DO YOUR OWN RESEARCH. YOU CAN USE THESE CODES AS E
 
 Useful crypto bots written in python <br /><br />
 
-coin_alarm.py : Automatic bot to check TOKEN/COIN prices mainly only listed in Pancakeswap.<br />
+(I) coin_alarm.py : Automatic bot to check TOKEN/COIN prices mainly only listed in Pancakeswap.<br />
 The program will send messages to your telegram so you need to set up a bot there too and get its ID in line 8.
 (Tutorial to set up telegram bot not included, please search in youtube).<br />
 1.-You should add the name of the coin and the pancakeswap identification inside the program in line 22.<br />
@@ -18,7 +18,7 @@ python3 -u coin_alarm.py > sal_coin.dat 2>stderr_coin.out &
 where sal_coin.dat is the log file and stderr_coin.out an outputs in case that the program crash.<br /><br />
 
 
-sell_buy_spot.py: Automatic binance bot to buy and sell in spot.<br />
+(II) sell_buy_spot.py: Automatic binance bot to buy and sell in spot.<br />
 
 IF IT IS NOT THE FIRST TIME RUNNING FOR THE SAME COIN: DELETE "conditions_to_buy_....dat"<br />
 
