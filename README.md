@@ -37,6 +37,17 @@ I would recommend to run the program as:
 python3 -u sell_buy_spot.py > sal_coin.dat 2>stderr_coin.out & , but replacing "coin" by the actual coin you are trading
 
 
+(III) create_longs_beta.py: Automatic futures binance bot to buy longs.<br />
+
+1.-Add binance credentials in lines 15 and 16.<br />
+2.-Add telegram bot info in lines 18 and 23.<br />
+3.-Add coin and pair in line 35. (pair mostly USDT)<br /><br />
+
+The strategy is based on three periods average 7,25,99 (you can change this in line 134). When 7 reaches 25 in an up trend and the prices are far away form 99, the program open a long with the first size (line 143).
+If the price goes lower than the stop_loss (line 133) it will open a second long with the second size, if it is the case, otherwise it will close the position and wait for new entry. You can add and modify the time of new entries as you wish.
 
 
+I would recommend to run the program as:
+python3 -u create_longs_beta.py > sal_long_coin.dat 2>stderr_long_coin.out & , but replacing "coin" by the actual coin you are trading
 
+THIS IS A BETA VERSION, PROCEED WITH CAUTION.
