@@ -34,7 +34,7 @@ Be aware about this. If you want to use less, modify line 356 (by default 1.0).
 8.-The program will wait until reaching conditions 16 or 21 and then sell at conditions 4 or 5. 
 
 I would recommend to run the program as:
-python3 -u sell_buy_spot.py > sal_coin.dat 2>stderr_coin.out & , but replacing "coin" by the actual coin you are trading
+python3 -u sell_buy_spot.py > sal_coin.dat 2>stderr_coin.out & , but replacing "coin" by the actual coin you are trading<br /><br />
 
 
 (III) create_longs_beta.py: Automatic futures binance bot to buy longs.<br />
